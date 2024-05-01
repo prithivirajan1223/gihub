@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GITHUB PROFILE</title>
+   <link rel="stylesheet" href="./githubprofile.css"/>
+
+  </head>
+  <style>html,
+    body {
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      margin: 0;
+    }
+    
+    .headerbody {
+      background-color: #2f3d46;
+      width: 100%;
+      height: 10vh;
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .image {
+      width: 25px;
+      height: 30px;
+      border-radius: 50%;
+      mix-blend-mode: color-dodge;
+      margin-left: 15px;
+      margin-top: 15px;
+    }
+    
+    .textcontext {
+      color: white;
+      font-size: 20px;
+      letter-spacing: 0.2rem;
+      width: 100%;
+      text-align: center;
+      font-family: "manrope", sans-serif;
+      font-weight: bold;
+      font-style: normal;
+    }
+    
+    .containerbody {
+      background-color: #cad2c5;
+    }
+    
+    .container {
+      background-color: #cad2c5;
+      height: 70vh;
+      display: grid;
+      grid-template-rows: repeat(3, auto);
+      grid-template-columns: repeat(4, auto);
+      padding: 40px;
+    }
+    
+    .common {
+      background-color: #353535;
+      border-radius: 10px;
+    }
+    
+    .sidepanel {
+      grid-row: 1 / span 3;
+      height: 95%;
+      width: 90%;
+      border-radius: 15px;
+    }
+    
+    .searchpanel {
+      grid-column: 2 / span 3;
+      grid-row: 1 / span 1;
+      width: 70%;
+      height: 30%;
+      position: relative;
+      top: 3px;
+      left: 15%;
+    }
+    
+    span {
+      color: #9c9c9c;
+      font-family: "manrope", sans-serif;
+      font-weight: bold;
+      font-style: normal;
+      letter-spacing: 0.2rem;
+      text-align: start;
+      position: absolute;
+      top: 11px;
+      left: 22px;
+    }
+    
+    .multiboxpanel {
+      grid-column: 2 / span 3;
+      grid-row: 2 / span 1;
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-template-rows: auto;
+      position: relative;
+      bottom: 28px;
+      left: 10px;
+    }
+    
+    .box1 {
+      position: relative;
+      top: 15px;
+      left: 62px;
+      width: 60%;
+      height: 80%;
+    }
+    
+    .box2 {
+      position: relative;
+      top: 15px;
+      left: 62px;
+      width: 60%;
+      height: 80%;
+    }
+    
+    .box3 {
+      position: relative;
+      top: 15px;
+      left: 62px;
+      width: 60%;
+      height: 80%;
+    }
+    
+    .bottompanel {
+      grid-column: 2 / span 3;
+      grid-row: 3 / span 1;
+      width: 87%;
+      height: 80%;
+      position: relative;
+      top: 15px;
+      left: 62px;
+    }
+    
+    .empty {
+      background-color: #cad2c5;
+      height: 20vh;
+    }
+
+  </style>
+  <body>
+    <div class="mainbody">
+      <div class="headerbody">
+        <img class="image" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" />
+        <p class="textcontext">GITHUB</p>
+      </div>
+      <div class="containerbody">
+        <div class="container">
+          <div class="sidepanel common"></div>
+          <div class="searchpanel common"><span>Search</span></div>
+          <div class="multiboxpanel">
+            <div class="box1 common"></div>
+            <div class="box2 common"></div>
+            <div class="box3 common"></div>
+          </div>
+          <div class="bottompanel common"></div>
+        </div>
+      </div>
+      <div class="empty"></div>
+    </div>
+  </body>
+</html>
